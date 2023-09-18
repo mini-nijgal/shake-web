@@ -13,7 +13,7 @@ const exp = [
   },
   {
     title: "Teaching Assistant",
-    cardImage: "assets/images/experience-page/gsoc.png",
+    cardImage: "assets/images/experience-page/SRM.png",
     place: "SRM Institute of Science and Technology",
     time: "(2018 - 2021)",
     desp: "<li>I supported the educators by assisting in classroom activities, grading, and guidance. I played a vital role in maintaining a productive learning environment.</li>",
@@ -27,65 +27,65 @@ const exp = [
   },
 ];
 
-const showCards2 = () => {
-  let output = "";
-  exp.forEach(
-    ({ title, cardImage, place, time, desp }) =>
-      (output += `        
-    <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
-      <div class="card card1">
-        <img src="${cardImage}" class="featured-image"/>
-        <article class="card-body">
-          <header>
-            <div class="title">
-              <h3>${title}</h3>
-            </div>
-            <p class="meta">
-              <span class="pre-heading">${place}</span><br>
-              <span class="author">${time}</span>
-            </p>
-            <ol>
-              ${desp}
-            </ol>
-          </header>
-        </article>
-      </div>
-    </div>
-      `)
-  );
-  experiencecards.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", showCards2);
+// const showCards2 = () => {
+//   let output = "";
+//   exp.forEach(
+//     ({ title, cardImage, place, time, desp }) =>
+//       (output += `        
+//     <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
+//       <div class="card card1">
+//         <img src="${cardImage}" class="featured-image"/>
+//         <article class="card-body">
+//           <header>
+//             <div class="title">
+//               <h3>${title}</h3>
+//             </div>
+//             <p class="meta">
+//               <span class="pre-heading">${place}</span><br>
+//               <span class="author">${time}</span>
+//             </p>
+//             <ol>
+//               ${desp}
+//             </ol>
+//           </header>
+//         </article>
+//       </div>
+//     </div>
+//       `)
+//   );
+//   experiencecards.innerHTML = output;
+// };
+// document.addEventListener("DOMContentLoaded", showCards2);
 
-// Volunteership Cards
+// // Volunteership Cards
 
-const volunteership = document.querySelector(".volunteership");
-const volunteershipcards = [
-  {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/1.jpg",
-    description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
-  },
-  {
-    title: "StudentCode-in 2020",
-    cardImage: "assets/images/experience-page/2.jpg",
-    description:
-      "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
-  },
-  {
-    title: "PClub Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/3.jpg",
-    description:
-      "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
-  },
-  {
-    title: "Hakin-Codes",
-    cardImage: "assets/images/experience-page/4.jpg",
-    description:
-      "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
-  },
-];
+// const volunteership = document.querySelector(".volunteership");
+// const volunteershipcards = [
+//   {
+//     title: "GirlScript Summer Of Code 2020",
+//     cardImage: "assets/images/experience-page/1.jpg",
+//     description:
+//       "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+//   },
+//   {
+//     title: "StudentCode-in 2020",
+//     cardImage: "assets/images/experience-page/2.jpg",
+//     description:
+//       "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
+//   },
+//   {
+//     title: "PClub Summer Of Code 2020",
+//     cardImage: "assets/images/experience-page/3.jpg",
+//     description:
+//       "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
+//   },
+//   {
+//     title: "Hakin-Codes",
+//     cardImage: "assets/images/experience-page/4.jpg",
+//     description:
+//       "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
+//   },
+// ];
 
 const showCards = () => {
   let output = "";
